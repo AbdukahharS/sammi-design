@@ -17,7 +17,7 @@ section .hero {
   margin-bottom: 80px;
 }
 
-section .hero h1 {
+section .hero h2 {
   font-size: 30px;
 }
 
@@ -51,4 +51,50 @@ section .hero .info {
 
 section .hero .info i {
   margin-right: 5px;
+}
+
+section .skills {
+  padding: 24px;
+  background: #1a202c;
+  border: 1px solid #1e293b;
+  border-radius: 7px;
+}
+
+section .skills .list {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section .skills .list .list-item {
+  width: calc(50% - 10px);
+  font-size: 16px;
+}
+
+section .skills .list .list-item i {
+  color: #22b458;
+  margin-right: 10px;
+}
+
+section .requirements {
+  margin-top: 40px;
+}
+
+section .requirements .list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+section .requirements .list span {
+  color: rgb(148 163 184);
+  background: rgb(26 32 44);
+  padding: 7px 10px;
+  border-radius: 5px;
 }
