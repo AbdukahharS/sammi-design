@@ -1,3 +1,31 @@
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the stars container
+  const starsContainer = document.querySelector('.stars')
+
+  // Get the initial rating from the data-rating attribute
+  const initialRating = parseFloat(starsContainer.getAttribute('data-rating'))
+
+  // Calculate the number of full stars
+  const fullStars = Math.floor(initialRating)
+
+  // Calculate the fraction of the last star
+  const fraction = initialRating - fullStars
+
+  // Mark full stars as checked
+  for (let i = 0; i < fullStars; i++) {
+    const star = starsContainer.children[i]
+    star.classList.toggle('fa-regular')
+    star.classList.toggle('fa-solid')
+  }
+
+  // If there is a fraction, partially mark the last star
+  if (fraction > 0) {
+    const lastStar = starsContainer.children[fullStars]
+    lastStar.classList.toggle('fa-star')
+    lastStar.classList.toggle('fa-star-half-stroke')
+  }
+})
+
 function copyText() {
   // Replace this text with the content you want to copy
   const textToCopy = 'https://sammi.ac/course/javascript'

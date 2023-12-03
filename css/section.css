@@ -1,3 +1,54 @@
 section {
   width: 60%;
 }
+
+section .breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  color: #1a202c;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+section .hero {
+  margin-top: 16px;
+  margin-bottom: 80px;
+}
+
+section .hero h1 {
+  font-size: 30px;
+}
+
+section .hero .desc {
+  opacity: 0.8;
+  margin-top: 12px;
+}
+
+section .hero .rating-box {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+section .hero .rating-box .rating,
+section .hero .rating-box .stars {
+  color: #ffd700;
+}
+
+section .hero .author {
+  margin-top: 12px;
+}
+
+section .hero .info {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+section .hero .info i {
+  margin-right: 5px;
+}
