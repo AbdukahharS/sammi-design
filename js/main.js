@@ -1,3 +1,23 @@
+// JavaScript to toggle dropdown on click
+function toggleDropdown(dropdownId) {
+  var dropdownContent = document.getElementById(dropdownId)
+  dropdownContent.classList.toggle('show') // Toggle the 'show' class
+}
+
+// Close the dropdowns if the user clicks outside of them
+window.onclick = function (event) {
+  var dropdowns = document.getElementsByClassName('dropdown-content')
+  for (var i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i]
+    if (
+      openDropdown.classList.contains('show') &&
+      !event.target.matches('.dropbtn')
+    ) {
+      openDropdown.classList.remove('show')
+    }
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   // Get the stars container
   const starsContainer = document.querySelector('.stars')
