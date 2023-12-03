@@ -1,0 +1,70 @@
+aside {
+  width: 40%;
+}
+
+aside article {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  padding: 5px;
+  background-color: #1a202c;
+  border-radius: 0.5rem;
+}
+
+aside article .container {
+  padding: 24px 16px;
+}
+
+aside article h1 {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+aside article .open-course {
+  margin-bottom: 16px;
+  padding: 16px 12px;
+  font-size: 14px;
+  width: 100%;
+  color: #fff;
+  border-radius: 0.5rem;
+  background: #2b6cb0;
+}
+
+aside article p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  margin-top: 20px;
+}
+
+aside article ul {
+  list-style: none;
+  border-bottom: 1px solid #2d3748;
+  padding: 6px;
+  margin-bottom: 12px;
+}
+
+aside article ul li {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+aside article ul li i {
+  margin-right: 6px;
+}
+
+aside article .copy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+aside article .copy h3 {
+  font-size: 20px;
+}
+
+aside article .copy button {
+  font-size: 20px;
+  color: #fff;
+}
