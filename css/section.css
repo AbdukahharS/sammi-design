@@ -17,6 +17,10 @@ section .hero {
   margin-bottom: 80px;
 }
 
+section .hero iframe {
+  display: none;
+}
+
 section .hero h2 {
   font-size: 30px;
 }
@@ -188,4 +192,27 @@ section .content .dropdowns {
 
 .dropdown-content ul li i {
   margin-right: 6px;
+}
+
+section .description {
+  margin-top: 40px;
+}
+
+section .description p {
+  margin-top: 20px;
+  color: #cbd5e1;
+}
+
+section .target {
+  margin-top: 40px;
+}
+
+section .target ul {
+  margin-top: 12px;
+  margin-left: 30px;
+  color: #94a3b8;
+}
+
+section .target ul li {
+  margin: 10px 0;
 }
